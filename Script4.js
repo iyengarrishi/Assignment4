@@ -18,7 +18,24 @@ console.log(test);
 function moveToHTML(bookList){
 	
 	console.log(bookList);
+	//I will use this next console log to pull out the name of the third book in my JSON object
+	//I expect the console log to show 'steveJobs', because that is what the third book is called
 	
+	//Message: TypeError: bookList.name is undefined. Hmmm..
+	//Just went over that part of the video again. Realized what I did wrong. This should work
+	
+	console.log(bookList.myBooks[2].name);
+	
+	//And it did! Now even though I'm done and I should sleep, I'll pull out the author of the first book using a div
+	//Y'know, for kicks
+	//I should see 'Tolkein' on my page
+	
+	var bookDiv = $("<div>");
+	$(bookDiv).html(bookList.myBooks[0].author);
+	$("#Main").append(bookDiv); 
+	
+	//Two typos, one missed semicolon and one missed hashtag later, there it is!
+
 }
 
 function bookSort(){
