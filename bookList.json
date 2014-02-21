@@ -1,0 +1,34 @@
+{
+    "myBooks": [
+        {
+            "name": "LoTR",
+            "author": "Tolkein",
+            "genre": "fiction"
+        },
+        {
+            "name": "harryPotter",
+            "author": "Rowling",
+            "genre": "fiction"
+        },
+        {
+            "name": "steveJobs",
+            "author": "Isaacson",
+            "genre": "nonfiction"
+        },
+        {
+            "name": "newJack",
+            "author": "Conover",
+            "genre": "nonfiction"
+        },
+        {
+            "name": "freeMan",
+            "author": "Sethi",
+            "genre": "nonfiction"
+        },
+        {
+            "name": "GoT",
+            "author": "Martin",
+            "genre": "fiction"
+        }
+    ]
+}
