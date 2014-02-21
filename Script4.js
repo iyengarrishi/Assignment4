@@ -15,6 +15,12 @@ console.log(test);
 
 //Now I will create a function within document ready, and call it bookSort
 
+function moveToHTML(bookList){
+	
+	console.log(bookList);
+	
+}
+
 function bookSort(){
 	
 	console.log ("If I did everything right, I will see this.")
@@ -28,7 +34,13 @@ function bookSort(){
 	$("#Main").append(divDiv);
 	
 	//Success! Forgot to append initially but fixed it
+	//Now to use .get to retrieve the JSON I created earlier
+	//Three parameters - Name of file, function to pass the data to, data format
 	
-} 
+	$.get("bookList.json", moveToHTML, "json")
+	
+	//We need to first define the function moveToHTML, and create it outside the first function
+	//Because, well, it has to be defined before we can use it. 
 
+} 
 $(document).ready(bookSort);  
